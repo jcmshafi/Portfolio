@@ -1,0 +1,25 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Satisfy', cursive; */
+*{
+    /* note */
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif; 
+    
+}
+.navbar{
+    background-color: #0c6168;
+    padding: 1% 7%;
+    text-align: center;
+}
+h1{
+    font-size: 1rem;
+}
+a{
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;  
+}
+body{
+    margin: 0;
+}
+
