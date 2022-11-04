@@ -1,25 +1,61 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Satisfy', cursive; */
-*{
-    /* note */
+*{  
     box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif; 
-    
-}
-.navbar{
-    background-color: #0c6168;
-    padding: 1% 7%;
-    text-align: center;
-}
-h1{
-    font-size: 1rem;
-}
-a{
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;  
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
 }
 body{
     margin: 0;
+    
+}
+h1{
+    font-size: 1rem;
+    text-align: center;
+  
+}
+a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;  
+  }
+/* For all devices */
+  [class*="col-"]{
+    float: left;
+    padding: 10px;
+} 
+
+/* for mobile  */
+[class*="col-"]{
+    width: 100%;
 }
 
+/* navbar design starts here  */
+.navbar{
+    background-color: rgb(34, 33, 33);
+    padding: 1% 7%;
+    text-align: center;
+}
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.navbar h1{
+    color: wheat;
+    margin: 0;
+    padding-top: 10px;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-menu a{
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 5px;
+}
+.nav-menu a:hover{
+    background-color: rgba(209, 56, 35, 0.947);
+}
+/* navbar design ends here  */
