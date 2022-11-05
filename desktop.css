@@ -60,6 +60,33 @@
     margin-left: 15px;
     text-align: left;
 }
-
-
 /* about me ends here   */
+
+
+
+
+
+/* skill section start from here------------ */
+.professional-experience{
+    padding: 1% 7%;
+}
+/* skill section ends from here-------------- */
+
+
+
+
+
+/* contact section starts from here---------- */
+.contact{
+    padding-right: 50px;
+}
+.contact button{
+    width: 150px;
+    
+    
+}
+.media-buttons .btn{
+    margin-top: 100px;
+    
+}
+/* contact section ends from here---------- */

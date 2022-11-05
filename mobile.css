@@ -29,14 +29,14 @@ p{
     text-align: justify;
 }
 .dotted-hr{
-    border: dotted 6px rgba(209, 56, 35, 0.947) ;
+    border: dotted 6px rgba(178, 36, 17, 0.808) ;
     border-bottom: none;
     margin: 20px auto;
     width: 70px;
 }
 .content-hr{
     margin: 15px;
-    border-color: rgba(209, 56, 35, 0.947);
+    border-color: rgba(178, 36, 17, 0.808);
 }
 /* For all devices */
   [class*="col-"]{
@@ -51,7 +51,7 @@ p{
 
 /* navbar design starts here  */
 .navbar{
-    background-color: rgb(34, 33, 33);
+    background-color: rgb(44, 42, 42);
     padding: 1% 7%;
     text-align: center;
 }
@@ -76,7 +76,7 @@ p{
     padding: 5px;
 }
 .nav-menu a:hover{
-    background-color: rgba(209, 56, 35, 0.947);
+    background-color: rgba(178, 36, 17, 0.808);
 }
 /* navbar design ends here  */
 
@@ -120,7 +120,7 @@ p{
     content: '';
 }
 .aboutme-image img{
-    border: 5px solid  rgba(209, 56, 35, 0.947);
+    border: 5px solid  rgba(178, 36, 17, 0.808);
     border-radius: 50%;
     height: 220px;
 
@@ -132,18 +132,237 @@ p{
     font-size: small;
     color: blueviolet;
 }
+.cv-button {
+   margin: 10px;
+} 
 .cv-button a{
     color: whitesmoke;
-    border-radius: 12px;
+    border-radius: 30px;
     border: 1px solid rgba(178, 36, 17, 0.808);
     padding: 7px;
     text-align: center;
     cursor: pointer;
+    font-size: 1rem;
     
 }
  .cv-button a:hover{
     background-color:  rgba(178, 36, 17, 0.808);
     
 }
+/* about me ends here----------   */
 
-/* about me ends here   */
+
+
+/* skill section start from here------------ */
+.professional-experience{
+    padding: 1% 0%;
+}
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 0.3s;
+    height: 600px;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 4px rgba(178, 36, 17, 0.808);
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+.rounded-img{
+    border: 2px solid rgba(178, 36, 17, 0.808);
+    border-radius: 15%;
+    padding: 10px;
+   
+}
+.card-title h2{
+    background-color: rgb(44, 42, 42);
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.skills-container{
+    padding-right: 45px;
+
+}
+.skills-container li{
+    list-style: none;
+    margin: 20px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.skills-container li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: rgba(216, 88, 71, 0.821);
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+
+    
+}
+.skills-container li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 10px;
+    background: rgba(178, 36, 17, 0.808);
+    top: calc(100% + 5px);
+    left: 0;
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    
+}
+.skills-container li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.skills-container li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 85%;
+    }
+}
+.skills-container li.bootstrap::after{
+    animation-name: bs;
+}
+@keyframes bs{
+    to{
+        width: 60%;
+    }
+}
+.skills-container li.javascript::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 70%;
+    }
+}
+.skills-container li.jquery::after{
+    animation-name: jq;
+}
+@keyframes jq{
+    to{
+        width: 30%;
+    }
+}
+.skills-container li.php::after{
+    animation-name: php;
+}
+@keyframes php{
+    to{
+        width: 80%;
+    }
+}
+.skills-container li.php::after{
+    animation-name: php;
+}
+@keyframes php{
+    to{
+        width: 80%;
+    }
+}
+.skills-container li.java::after{
+    animation-name: java;
+}
+@keyframes java{
+    to{
+        width: 85%;
+    }
+}
+.skills-container li.git::after{
+    animation-name: github;
+}
+@keyframes github{
+    to{
+        width: 95%;
+    }
+}
+.skills-container li.cplusplus::after{
+    animation-name: cplusplus;
+}
+@keyframes cplusplus{
+    to{
+        width: 85%;
+    }
+}
+/* skill section ends from here-------------- */
+
+
+
+/* contact section starts from here---------- */
+.contact-section{
+    padding: 1% 7%;
+    /* text-align: center; */
+    color: whitesmoke;
+    background-color: rgb(44, 42, 42);
+}
+.contact-section::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+ .contact{
+    text-align: center;
+ }
+.contact input, textarea{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact button{
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 2px;
+    color: whitesmoke;
+    background-color: rgba(178, 36, 17, 0.808);
+}
+.contact-links{
+    text-align: center;
+}
+.media-buttons .btn{
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    
+}
+.btn :hover{
+    background-color: rgba(178, 36, 17, 0.808);
+}
+/* contact section ends from here---------- */
