@@ -366,3 +366,31 @@ p{
     background-color: rgba(178, 36, 17, 0.808);
 }
 /* contact section ends from here---------- */
+
+
+
+/* footer starts from here  */
+.footer{
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.footer::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+ .footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+
+ }
+ .footer-menu a:hover{
+    background-color: rgba(178, 36, 17, 0.808);
+
+ }
+
+/* footer ends from here  */

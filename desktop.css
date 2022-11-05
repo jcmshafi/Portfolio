@@ -90,3 +90,16 @@
     
 }
 /* contact section ends from here---------- */
+
+
+
+/* footer starts from here  */
+.footer-menu a{
+    display: inline;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+
+/* footer ends from here  */
